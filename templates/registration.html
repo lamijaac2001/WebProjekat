@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Registracija</title>
+    <link rel="stylesheet" href="/src/styles.css/registration.css"> 
+
+      
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <style>
+    body {
+    background-color: #f7e1f7;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff66b3;
+    margin-bottom: 20px;
+  }
+  
+  .user-details {
+    margin-bottom: 20px;
+  }
+  
+  .input-box {
+    margin-bottom: 20px;
+  }
+  
+  .details {
+    display: block;
+    font-size: 16px;
+    color: #ff66b3;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff66b3;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .input-box input[type="password"]::placeholder {
+    color: #ff66b3;
+  }
+  
+  .button {
+    text-align: center;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ff66b3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #ff3385;
+  }
+   </style>
+<body>
+  <div class="container">
+    <div class="title">Registracija</div>
+    <div class="content">
+      <form form id="registration-form">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Korisničko ime</span>
+            <input type="text" id="username" name="username" required>
+          </div>
+         
+          <div class="input-box">
+            <span class="details">Lozinka</span>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Potvrda lozinke</span>
+            <input type="password" placeholder="Confirm your password" required>
+          </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+        
+      </form>
+    </div>
+  </div>
+  <script type='text/javascript' src="../client/script.js" ></script>
+</body>
+</html>

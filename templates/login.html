@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Forma za prijavu</title>
+  <link rel="stylesheet" href="/src/styles.css/login.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body {
+    background-color: #ffe6f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  .field {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff66b3;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    color: #ff66b3;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ff66b3;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ff66b3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #ff3385;
+  }
+  
+  .pass-link {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  .pass-link a {
+    color: #ff66b3;
+    text-decoration: none;
+  }
+  
+  .pass-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .signup-link a {
+    color: #ff66b3;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  #message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+</style>
+<body>
+  <div class="field">
+    <div class="title">Prijava</div>
+    <form form id="login-form">
+      <div class="field">
+        <label for="username">Korisničko ime</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="field">
+        <label for="password">Lozinka</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+        <div class="pass-link">
+          <a href="#">Zaboravili ste lozinku?</a>
+        </div>
+      </div>
+      <div class="field">
+        <input type="submit" value="Login">
+      </div>
+      <div class="signup-link">
+        Nemate račun? <a href="/templates/registration.html">Registrirajte se</a>
+        <div id="message"></div>
+      </div>
+    </form>
+  </div>
+  <script type='text/javascript' src="../client/script.js" ></script>
+</body>
+</html>

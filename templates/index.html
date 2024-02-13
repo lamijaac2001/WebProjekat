@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putovanja</title>
+    
+</head>
+<style>
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #ff66b3;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #ff66b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    text-align: center;
+    margin-top: 30px;
+}
+
+label {
+    font-weight: bold;
+    color: #ff66b3;
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    border: 2px solid #ff66b3;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff66b3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff3385;
+}
+
+</style>
+<body>
+    <h1>Dobrodošli na stranicu putovanja</h1>
+    
+    <h2>Putovanja</h2>
+    <ul>
+        <li>
+            <h3>Putovanje 1</h3>
+            <p>Kratki opis putovanja 1.</p>
+            <p>Destinacija 1</p>
+            <a href="putovanje1.html">Detaljan pregled</a>
+            
+        </li>
+        <li>
+            <h3>Putovanje 2</h3>
+            <p>Kratki opis putovanja 2</p>
+            <p>Destinacija 2</p>
+            <a href="putovanje2.html">Detaljan pregled</a>
+        
+        </li>
+        
+    </ul>
+    
+    <h2>Filtriranje</h2>
+    <form>
+        <label for="category">Odaberi kategoriju:</label>
+        <select name="category" id="category">
+            <option value="europa">Europa</option>
+            <option value="daleka">Daleka putovanja</option>
+            <option value="ljetovanja">Ljetovanja</option>
+           
+        </select>
+        <input type="submit" value="Filtriraj">
+    </form>
+</body>
+</html>
